@@ -102,5 +102,77 @@ nav img {
   background: #fff;
   font-weight: bold;
   color: #ebaf0a;
-  box-shadow: 0 0 5px #ebaf0a, 0 0 25px #ebaf0a, 0 0 50px #ebaf0a, 0 0 100px #ebaf0a;
+  /* box-shadow: 0 0 5px #ebaf0a, 0 0 25px #ebaf0a, 0 0 50px #ebaf0a, 0 0 100px #ebaf0a; */
+}
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .logo {
+    width: 70px;
+    padding-top: 10px;
+  }
+  .hamburger h1 {
+    font-size: 30px;
+  }
+  .hamburger p {
+    font-size: 15px;
+  }
+  .hamburger .hero {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: none;
+    background-color: blue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #ebaf0a;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  /* nav .nav-links {
+    clip-path: circle(100px at 90% -10%);
+  }
+
+  nav .nav-links.open {
+    right: 0px;
+    clip-path: circle(1000px at 90% -10%);
+  } */
+
+  .hero {
+    display: block;
+  }
+
 }

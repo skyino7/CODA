@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="/">
-                <img src="img/CODA.png" alt="CODA Logo">
+                <img src="img/CODA.png" class="logo" alt="CODA Logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -22,6 +25,8 @@
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
+            </div>
+            <i class="fa fa-bars menu" onclick="showMenu()"></i>
         </nav>
 
         <div class="hamburger">
@@ -32,5 +37,7 @@
         </div>
 
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
