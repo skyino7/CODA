@@ -23,7 +23,7 @@ nav {
 }
 
 nav img {
-  width: 75px;
+  width: 150px;
 }
 
 .nav-links {
@@ -44,6 +44,11 @@ nav img {
   font-size: 15px;
 }
 
+.nav-links ul li:hover {
+  transition: 0.2s;
+  font-weight: bold;
+}
+
 .nav-links ul li::after {
   content: '';
   width: 0%;
@@ -56,4 +61,46 @@ nav img {
 
 .nav-links ul li:hover::after {
   width: 100%;
+}
+
+.hamburger {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hamburger h1 {
+  font-size: 80px;
+}
+
+.hamburger p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero {
+  display: inline-block;
+  background: #ebaf0a;
+  padding: 12px 34px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero:hover {
+  letter-spacing: 1px;
+  background: #fff;
+  font-weight: bold;
+  color: #ebaf0a;
+  box-shadow: 0 0 5px #ebaf0a, 0 0 25px #ebaf0a, 0 0 50px #ebaf0a, 0 0 100px #ebaf0a;
 }
